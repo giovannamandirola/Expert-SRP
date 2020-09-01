@@ -4,6 +4,11 @@ namespace SRP
 {
     public class Libro
     {
+        /* Se podría generar una nueva clase bibiloteca, donde estén los datos del sector y estante donde se almacena el libro teniendo 
+        que por expert Almacenar libro se encuentre en la clase Bibloteca.
+        Las clases definidas de esta manera tendrían por lo menos dos razones de cambio, ejemplo por cambio de lugar físico donde se
+        almacenan,tambien se podría ver modificada por cambios en el codigo del libro. Hacer ese cambio haría el código más ordenado
+        ante eventuales cambios. Agregar más datos sobre el libro*/
 
         public string Titulo { get ; }
         public string Autor { get ; }
