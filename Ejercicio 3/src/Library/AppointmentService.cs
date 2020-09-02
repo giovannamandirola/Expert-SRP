@@ -3,6 +3,10 @@ using System.Text;
 
 namespace Library
 {
+    /*Por SRP la clase Create Appointment cumple varias responsabilidades en el programa, y tendría varias razones de cambio tanto mas doctores distintas formas, 
+    el objeto conoce muchas cosas, lo cual le genera muchas resoponsabilidades, conocer datos de la persona, del lugar de la cita, la hora , y además datos del dotor.
+    Se podrían crear la clase persona, que sería la que quiere realizar la cita médita, la cita médica y los datos del doctor al que quiere consultar.*/
+    
     public class AppointmentService
     {
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
