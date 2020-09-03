@@ -8,21 +8,19 @@ namespace SRP
         public string Titulo { get ; }
         public string Autor { get ; }
         public string Codigo { get ;  }
-        public string SectorBiblioteca { get ; set; }
-        public string EstanteBiblioteca { get ; set; }
+        public Biblioteca Almacenado {get; set; }
 
         public Libro(String titulo, String autor, String codigo)
         {
             this.Titulo = titulo;
             this.Autor = autor;
             this.Codigo = codigo;
+            this.Almacenado = Almacenado;
         }
-
-        public void AlmacenarLibro(String sector, String estante)
+        public void AlmacenarLibro (Biblioteca biblioteca)
         {
-            this.SectorBiblioteca = sector;
-            this.EstanteBiblioteca = estante;
+            this.Almacenado = biblioteca;
         }
-
+        
     }
 }
